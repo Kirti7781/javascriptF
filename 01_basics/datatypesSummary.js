@@ -40,3 +40,26 @@ let greet=function(){                       //function
     console.log("hello world")
 }
 console.log(typeof greet)                  //function
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(primitive)         heap(non-primitive) 
+
+let name1="kirti"
+let name2=name1
+
+name2="kuhu"
+console.log(name1)  
+console.log(name2)   
+
+let user1={
+    namme:"kirti",
+    userid:"kirti@gmail.com"
+}
+let user2=user1
+user2.namme="kuhu"
+console.log(user1)
+console.log(user2)
