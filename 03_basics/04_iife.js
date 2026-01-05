@@ -17,4 +17,4 @@ chai();  //normal way
 //IIFE with parameters
 ((name)=>{console.log(`hello ${name} chaii peelo`)})("kirti")
 
-
+ //doneeee
