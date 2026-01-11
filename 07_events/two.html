@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CHAI AUR CODE</h1>
+    <button id="myButton">Click Me!</button>
+</body>
+<script>
+    const myname=function(){
+        console.log("Kirti")
+
+    }
+    setTimeout(myname,2000);
+
+   let chngtext=function(){document.querySelector('h1').innerHTML="Kirti Awesome Learner"}
+//    setTimeout(chngtext,4000);
+   const change=setTimeout(chngtext,4000);
+
+   document.querySelector('#myButton').addEventListener('click', function(){
+       clearTimeout(change);
+       document.querySelector('#myButton').innerHTML="nhi krna tha"
+   })
+
+
+
+</script>
+</html>
