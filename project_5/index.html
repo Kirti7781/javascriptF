@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>DANGER!! <br>COLOR WILL CHANGE CONTINOUSLY</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button></div>
+</body>
+<script>
+    const color=function(){
+        document.body.style.backgroundColor='rgb('+Math.floor(Math.random()*256)+','+Math.floor(Math.random()*256)+','+Math.floor(Math.random()*256)+')'
+    }
+    let stpid=null
+    let strt=function(){
+        if(stpid===null){
+            stpid=setInterval(color,100)
+        }
+        
+    }
+  
+    document.querySelector('#start').addEventListener('click', function(){
+         strt()
+        });
+    document.querySelector('#stop').addEventListener('click', function(){
+        //  document.body.style.backgroundColor='white'
+         clearInterval(stpid)
+         stpid=null
+        });
+
+</script>
+</html>
