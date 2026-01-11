@@ -1,0 +1,28 @@
+html{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #A8DF8E;
+}
+#canvas{
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+    background-color: #FFD8DF;
+    width: 250px;
+    height: 250px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+    font-size: larger;
+}
+#clock{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin: 50px;
+    background-color: #FFAAB8;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
