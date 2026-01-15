@@ -1,0 +1,86 @@
+body{
+    background-color: #000000;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#canvas{
+    width: 400px;
+    height: 400px;
+    background-color: #500073;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    padding: 2px;
+    margin-top: 100px;
+    border: 5px solid #212212;
+}
+#heading{
+    text-align: center;
+    background-color: #1B211A;
+    margin: 5px;
+    font-family: 'Arial', sans-serif;
+    color: #C62300;
+}
+#input-area{
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    color: #C62300;
+}
+#guess{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+   
+}
+#sbbtn{
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    width: 200px;
+    
+}
+#submit{
+    text-align: center;
+    justify-content: center ;
+    margin-left: 70px;
+}
+#your_guess{
+    width: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #DC2525
+
+}
+#highlow{
+    /* background-color: #DC2525; */
+    margin-left: 100px;
+    margin-right: 50px;
+    color: #DC2525;
+    width: 300px;
+}
+#left{
+    /* background-color: #DC2525; */
+    margin: 100px;
+    color: #DC2525
+}
+#restart{
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+}
+#imgBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#imgBtn img {
+  width: 60px;
+}
