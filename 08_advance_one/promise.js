@@ -33,7 +33,7 @@ promisethree.then(function(user){
 
 })
 
-const promisefive=new Promise(function(resolve,reject){
+const promisefour=new Promise(function(resolve,reject){
     let error=false
     setTimeout(function(){
         if(!error)
@@ -44,7 +44,7 @@ const promisefive=new Promise(function(resolve,reject){
     },1000)
 
 })
-promisefive
+promisefour
 .then((user)=>{
     console.log(user)
     return user.username
@@ -55,3 +55,56 @@ promisefive
 .finally(()=>{
     console.log("either resolved or rejected")
 })
+
+const promisefive=new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error=true
+        if(!error){
+        resolve({usename:"kirti",passwörd:"12345"})
+        }
+        else{
+            reject("ERROR DETECTED")
+        }
+    },1000)
+})
+
+async function consumepromisefive(){
+    try {
+        const response= await promisefive
+        console.log(response)
+    } catch (error) {
+        console.log(error)
+        
+    }
+}
+consumepromisefive()
+
+
+async function allusers(){
+    
+    try {
+        const response =await fetch("https://api.github.com/users/Kirti7781")
+        const data = await response.json()
+        console.log(data)
+        
+    } catch (error) {
+        console.log(`error ${error}`);
+        
+        
+    }
+}
+// allusers()
+
+fetch("https://api.github.com/users/Kirti7781")
+.then(function(response){
+    return response.json()
+
+
+}).then(function(data){
+    console.log(data)
+
+}).catch(function(error){
+    console.log(error)
+
+})
+
